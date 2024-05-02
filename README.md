@@ -15,7 +15,8 @@ This project contains the following dependencies:
 - prettier
 - eslint-config-prettier
 - eslint-plugin-prettier
-- prettier-plugin-tailwindcss eslint-plugin-simple-import-sort
+- prettier-plugin-tailwindcss
+- eslint-plugin-simple-import-sort
 - lint-staged
 - husky
 - @commitlint/config-conventional
