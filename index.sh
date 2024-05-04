@@ -60,6 +60,11 @@ cat $SCRIPTPATH/client/tsconfig.json > tsconfig.json
 
 echo "${GREEN}✔ Config tsconfig successfully!${NC}"
 
+# Config tailwind
+cat $SCRIPTPATH/client/tailwind.config.ts > tailwind.config.ts
+
+echo "${GREEN}✔ Config tailwind successfully!${NC}"
+
 # Config next.config.mjs
 cat $SCRIPTPATH/client/next.config.mjs > next.config.mjs
 
@@ -84,7 +89,7 @@ echo "${GREEN}✔ Config vscode successfully!${NC}"
 
 # Config UI Base
 echo "Configuring UI Base"
-pnpm add class-variance-authority @radix-ui/react-accordion @radix-ui/react-slot @radix-ui/react-alert-dialog lucide-react react-day-picker embla-carousel-react @radix-ui/react-checkbox tailwind-merge clsx @radix-ui/react-collapsible @radix-ui/react-dialog cmdk @radix-ui/react-context-menu vaul @radix-ui/react-dropdown-menu @radix-ui/react-label react-hook-form @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select sonner @hookform/resolvers zod @svgr/webpack
+pnpm add class-variance-authority @radix-ui/react-accordion @radix-ui/react-slot @radix-ui/react-alert-dialog lucide-react react-day-picker embla-carousel-react @radix-ui/react-checkbox tailwind-merge clsx @radix-ui/react-collapsible @radix-ui/react-dialog cmdk @radix-ui/react-context-menu vaul @radix-ui/react-dropdown-menu @radix-ui/react-label react-hook-form @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select sonner @hookform/resolvers zod @svgr/webpack tailwindcss-animate
 
 rm -rf public
 cp -rf $SCRIPTPATH/client/public public
