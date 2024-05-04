@@ -79,7 +79,7 @@ echo "${GREEN}✔ Config vscode successfully!${NC}"
 
 # Config UI Base
 echo "Configuring UI Base"
-pnpm add @radix-ui/react-accordion class-variance-authority
+pnpm add class-variance-authority @radix-ui/react-accordion @radix-ui/react-slot @radix-ui/react-alert-dialog lucide-react react-day-picker embla-carousel-react @radix-ui/react-checkbox tailwind-merge clsx @radix-ui/react-collapsible @radix-ui/react-dialog cmdk @radix-ui/react-context-menu vaul @radix-ui/react-dropdown-menu @radix-ui/react-label react-hook-form @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select sonner
 
 rm -rf public
 cp -rf $SCRIPTPATH/client/public public
