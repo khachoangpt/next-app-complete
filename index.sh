@@ -78,6 +78,9 @@ cat $SCRIPTPATH/files/.vscode/settings.json > .vscode/settings.json
 echo "${GREEN}✔ Config vscode successfully!${NC}"
 
 # Config UI Base
+echo "Configuring UI Base"
+pnpm add @radix-ui/react-accordion class-variance-authority
+
 rm -rf public
 cp -rf $SCRIPTPATH/client/public public
 rm -rf src
