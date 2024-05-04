@@ -82,8 +82,10 @@ cat $SCRIPTPATH/client/.commitlintrc.json > .commitlintrc.json
 
 echo "${GREEN}✔ Config commitlint successfully!${NC}"
 
+# Config vscode
 mkdir .vscode
 cat $SCRIPTPATH/client/.vscode/settings.json > .vscode/settings.json
+cat $SCRIPTPATH/client/.vscode/i18n-ally-custom-framework.yml > .vscode/i18n-ally-custom-framework.yml
 
 echo "${GREEN}✔ Config vscode successfully!${NC}"
 
