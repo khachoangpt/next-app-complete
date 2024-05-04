@@ -17,7 +17,7 @@ export const selectVariants = cva(
 
 export const selectContentVariants = cva(
   [
-    'relative z-50 h-60 max-h-[--radix-select-content-available-height] min-w-[8rem] overflow-hidden rounded-medium border bg-popover text-popover-foreground shadow-md data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 min-w-[var(--radix-select-trigger-width)] max-w-[--radix-select-trigger-width]',
+    'relative z-50 min-w-[8rem] overflow-hidden rounded-medium border bg-popover text-popover-foreground shadow-md data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 min-w-[var(--radix-select-trigger-width)] max-w-[--radix-select-trigger-width]',
   ],
   {
     variants: {

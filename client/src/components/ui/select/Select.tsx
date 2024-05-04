@@ -11,6 +11,7 @@ import {
 
 import { cn } from '@/lib/utils'
 
+import { Container } from '../container'
 import { ScrollArea } from '../scroll-area'
 import { Text } from '../text'
 import {
@@ -97,9 +98,7 @@ const SelectContent = forwardRef<
         {...props}
       >
         <ScrollArea>
-          <SelectPrimitive.Viewport className={cn('p-1')}>
-            {children}
-          </SelectPrimitive.Viewport>
+          <Container className="h-fit max-h-56">{children}</Container>
         </ScrollArea>
       </SelectPrimitive.Content>
     </SelectPrimitive.Portal>
@@ -149,7 +148,7 @@ const SelectSeparator = forwardRef<
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Separator
     ref={ref}
-    className={cn('bg-muted -mx-1 my-1 h-px', className)}
+    className={cn('-mx-1 my-1 h-px bg-muted', className)}
     {...props}
   />
 ))

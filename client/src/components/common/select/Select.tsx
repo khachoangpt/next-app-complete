@@ -31,7 +31,7 @@ export const Select = (props: Props) => {
     className,
     disabled = false,
     onChange,
-    placeholder = '',
+    placeholder = 'Select',
     value,
     ref,
     variant,
