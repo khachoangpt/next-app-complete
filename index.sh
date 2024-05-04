@@ -55,6 +55,11 @@ cat $SCRIPTPATH/files/.lintstagedrc > .lintstagedrc
 
 echo "${GREEN}✔ Config lint-staged successfully!${NC}"
 
+# Config tsconfig
+cat $SCRIPTPATH/files/tsconfig.json > tsconfig.json
+
+echo "${GREEN}✔ Config tsconfig successfully!${NC}"
+
 pnpm exec husky init
 
 cat $SCRIPTPATH/files/.husky/pre-commit > .husky/pre-commit
@@ -71,5 +76,13 @@ mkdir .vscode
 cat $SCRIPTPATH/files/.vscode/settings.json > .vscode/settings.json
 
 echo "${GREEN}✔ Config vscode successfully!${NC}"
+
+# Config UI Base
+rm -rf public
+cp -rf $SCRIPTPATH/client/public public
+rm -rf src
+cp -rf $SCRIPTPATH/client/src src
+
+echo "${GREEN}✔ Config UI Base successfully!${NC}"
 
 echo "${GREEN}✔ Project setup successfully!${NC}"
