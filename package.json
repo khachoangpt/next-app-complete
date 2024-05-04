@@ -9,7 +9,10 @@
   "bin": {
     "next-app-complete": "index.sh"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khachoangpt/next-app-complete.git"},
+  "keywords": ["nextjs"],
   "author": "",
   "license": "ISC"
 }
