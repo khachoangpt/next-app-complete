@@ -1,4 +1,4 @@
-type StaticPageMeta = {
+export type StaticPageMeta = {
   title: string
   href: string
   isAuth: boolean
