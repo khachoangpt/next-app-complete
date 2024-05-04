@@ -41,39 +41,44 @@ echo "${GREEN}✔ Install dependencies successfully!${NC}"
 
 
 # Config eslint
-cat $SCRIPTPATH/files/.eslintrc > .eslintrc.json
+cat $SCRIPTPATH/client/.eslintrc.json > .eslintrc.json
 
 echo "${GREEN}✔ Config eslint successfully!${NC}"
 
 # Config prettier
-cat $SCRIPTPATH/files/.prettierrc > .prettierrc
+cat $SCRIPTPATH/client/.prettierrc > .prettierrc
 
 echo "${GREEN}✔ Config prettier successfully!${NC}"
 
 # Config lint-staged
-cat $SCRIPTPATH/files/.lintstagedrc > .lintstagedrc
+cat $SCRIPTPATH/client/.lintstagedrc > .lintstagedrc
 
 echo "${GREEN}✔ Config lint-staged successfully!${NC}"
 
 # Config tsconfig
-cat $SCRIPTPATH/files/tsconfig.json > tsconfig.json
+cat $SCRIPTPATH/client/tsconfig.json > tsconfig.json
 
 echo "${GREEN}✔ Config tsconfig successfully!${NC}"
 
+# Config next.config.mjs
+cat $SCRIPTPATH/client/next.config.mjs > next.config.mjs
+
+echo "${GREEN}✔ Config next.config.mjs successfully!${NC}"
+
 pnpm exec husky init
 
-cat $SCRIPTPATH/files/.husky/pre-commit > .husky/pre-commit
+cat $SCRIPTPATH/client/.husky/pre-commit > .husky/pre-commit
 
-cat $SCRIPTPATH/files/.husky/commit-msg > .husky/commit-msg
+cat $SCRIPTPATH/client/.husky/commit-msg > .husky/commit-msg
 
 echo "${GREEN}✔ Config husky successfully!${NC}"
 
-cat $SCRIPTPATH/files/.commitlintrc.json > .commitlintrc.json
+cat $SCRIPTPATH/client/.commitlintrc.json > .commitlintrc.json
 
 echo "${GREEN}✔ Config commitlint successfully!${NC}"
 
 mkdir .vscode
-cat $SCRIPTPATH/files/.vscode/settings.json > .vscode/settings.json
+cat $SCRIPTPATH/client/.vscode/settings.json > .vscode/settings.json
 
 echo "${GREEN}✔ Config vscode successfully!${NC}"
 
